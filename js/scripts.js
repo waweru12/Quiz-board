@@ -16,14 +16,15 @@ $(document).ready(function () {
 
     $("#sequel").text("YOUR SCORE: " + result + " POINTS OUT OF 50");
 
-    if (sequel >= 40) {
-      $("#comment").text("EXCELLENT WORK! KEEP IT UP.")
-    } else if (result >= 25 && result < 40) {
-      $("#comment").text("FAIRLY DONE! GOOD WORK.")
-    } else if (result < 25) {
-      $("#comment").text("POOR WORK! RETAKE THE TEST.")
-    } else {
-      $("#comment").text("ANSWER EVERY QUESTION PLEASE!")
-    }
-  });
+
+    if (result >= 40) {
+     $("#comment").text("EXCELLENT WORK! KEEP IT UP.")
+   } else if (result >= 25 && result < 40) {
+     $("#comment").text("FAIRLY DONE! GOOD WORK.")
+   } else if (result < 25) {
+     $("#comment").text("POOR WORK! RETAKE THE TEST.")
+   } else {
+     $("#comment").text("ANSWER EVERY QUESTION PLEASE!")
+   }
+ });
 });
